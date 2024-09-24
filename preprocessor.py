@@ -1,5 +1,6 @@
-import re  # Regular expressions for parsing data
-import pandas as pd  # Pandas for data manipulation
+import re
+import pandas as pd
+from dateutil import parser  # Import dateutil to help with parsing dates
 
 def preprocess(data):
     """
@@ -13,7 +14,7 @@ def preprocess(data):
     """
     
     # Define the pattern for identifying date and time in the chat data
-    pattern = '\d{1,2}/\d{1,2}/\d{2,4},\s\d{1,2}:\d{2}\s-\s'
+    pattern = r'\d{1,2}/\d{1,2}/\d{2,4},?\s?\d{1,2}:\d{2}\s?[APap][Mm]?|\d{1,2}/\d{1,2}/\d{2,4},?\s?\d{1,2}:\d{2}'
     
     # Split data into messages and extract dates
     messages = re.split(pattern, data)[1:]  # Extract messages by splitting based on the date pattern
@@ -21,10 +22,10 @@ def preprocess(data):
 
     # Create a DataFrame with 'user_message' and 'message_date' columns
     df = pd.DataFrame({'user_message': messages, 'message_date': dates})
-    
-    # Convert 'message_date' to datetime format and rename to 'date'
-    df['message_date'] = pd.to_datetime(df['message_date'], format='%d/%m/%Y, %H:%M - ')
-    df.rename(columns={'message_date': 'date'}, inplace=True)
+
+    # Parse dates using dateutil.parser
+    df['date'] = df['message_date'].apply(lambda x: parser.parse(x))  # Parse dates using dateutil
+    df.drop(columns=['message_date'], inplace=True)  # Drop the original message_date column
 
     # Initialize lists to store users and actual messages
     users = []
@@ -35,12 +36,12 @@ def preprocess(data):
         entry = re.split('([\w\W]+?):\s', message)  # Split each message into user and the actual message content
         
         if entry[1:]:  # If the message contains a username
-            users.append(entry[1])  # Extract username
-            messages.append(" ".join(entry[2:]))  # Extract the message content
+            users.append(entry[1].strip())  # Extract username
+            messages.append(" ".join(entry[2:]).strip())  # Extract the message content
         else:
             # If no username is found, it's likely a system message (group notification)
             users.append('group_notification')
-            messages.append(entry[0])  # Extract the entire message as a system notification
+            messages.append(entry[0].strip())  # Extract the entire message as a system notification
 
     # Add 'user' and 'message' columns to the DataFrame
     df['user'] = users
