@@ -38,7 +38,50 @@ The WhatsApp Chat Analyzer is a Streamlit application designed to analyze WhatsA
 
 ### Installation
 
-1. Clone the repository:
+1. **Fork this repository.** Click the fork icon in the top right corner of this page.
+
+2. Clone the repository:
    ```bash
-   git clone https://github.com/yourusername/whatsapp-chat-analyzer.git
+   git clone https://github.com/AbhaySingh71/whatsapp-chat-analyzer.git
    cd whatsapp-chat-analyzer
+
+Create a new branch.
+
+git checkout -b <your_branch_name>
+Make changes to the source code.
+
+Stage your changes and commit.
+
+bash
+Copy code
+# Add changes to index
+git add .
+
+# Commit to the local repository
+git commit -m "<your_commit_message>"
+CAUTION: Sync your local repository with the original repo (upstream) before pushing your commits. This avoids unnecessary conflicts during the merge.
+
+Push your local commits to the remote repository.
+
+bash
+Copy code
+git push -u origin <your_branch_name>
+Create a Pull Request (PR)!
+
+Congratulations! Sit back and relax, you've made a contribution to WhatsApp Chat Analyzer.
+
+NOTE: Feel free to open issues if you encounter any problems.
+
+Run on Local System
+To run the application on your local machine:
+
+Install required packages. Ensure you are using Python 3.11.0 or higher.
+
+bash
+Copy code
+pip install -r requirements.txt
+Start your local server.
+
+bash
+Copy code
+streamlit run app.py
