@@ -1,4 +1,4 @@
-# WhatsApp Chat Analyzer
+# WhatsApp Chat Analyzer 📊💬
 
 ![WhatsApp Chat Analyzer](banner.jpeg)
 
@@ -75,12 +75,11 @@ NOTE: Feel free to open issues if you encounter any problems.
 
 
 
-##Run on Local System
+## Run on Local System
 
-To run the application on your local machine:
+### To run the application on your local machine:
 
-Install required packages. Ensure you are using Python 3.11.0 or higher:
-   ```bash
-    pip install -r requirements.txt
-
+### Install required packages  Ensure you are using Python 3.11.0 or higher:
+  ```bash
+ pip install -r requirements.txt
 
