@@ -95,7 +95,7 @@ NOTE: Feel free to open issues if you encounter any problems.
 
 ## 🌐 Deployed Version
 
-The app is deployed on **Streamlit**! You can check out the live version and explore the analysis on your own:[Streamlit App](https://whatsapp-chat-analyzers.streamlit.app/).
+The app is deployed on **Streamlit**! You can check out the live version and explore the analysis on your own:[Streamlit App](https://whatsapp-chat-analyzers.streamlit.app).
 
 ## 🤝 Contributing
 
