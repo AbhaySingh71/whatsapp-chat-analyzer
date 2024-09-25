@@ -82,3 +82,33 @@ NOTE: Feel free to open issues if you encounter any problems.
 ### Install required packages  Ensure you are using Python 3.11.0 or higher:
   ```bash
  pip install -r requirements.txt
+  ```
+6. **Run the Streamlit App:**
+
+    ```bash
+    streamlit run app.py
+    ```
+
+7. **Explore the Dashboard:**
+
+    Open the provided URL in your browser to explore the interactive dashboard and gain valuable insights into startup funding trends.
+
+## 🌐 Deployed Version
+
+The app is deployed on **Streamlit**! You can check out the live version and explore the analysis on your own: [Streamlit App](https://whatsapp-chat-analyzers.streamlit.app/).
+
+## 🤝 Contributing
+
+We welcome contributions! If you have any suggestions, bug reports, or feature requests, please open an issue or submit a pull request.
+
+## 📄 License
+
+This project is licensed under the MIT License.
+
+## 🙏 Acknowledgments
+
+A big thank you to the data science community for their support and resources. Special thanks to the providers of the dataset and all contributors who helped make this project a reality.
+
+"[![built with love](https://forthebadge.com/images/badges/built-with-love.svg)](https://www.linkedin.com/in/abhay-singh-050a5b293/)")
+   
+
