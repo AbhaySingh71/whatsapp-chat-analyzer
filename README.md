@@ -95,7 +95,7 @@ NOTE: Feel free to open issues if you encounter any problems.
 
 ## 🌐 Deployed Version
 
-The app is deployed on **Streamlit**! You can check out the live version and explore the analysis on your own: [Streamlit App](https://whatsapp-chat-analyzers.streamlit.app/).
+The app is deployed on **Streamlit**! You can check out the live version and explore the analysis on your own:[Streamlit App](https://whatsapp-chat-analyzers.streamlit.app/).
 
 ## 🤝 Contributing
 
@@ -109,6 +109,8 @@ This project is licensed under the MIT License.
 
 A big thank you to the data science community for their support and resources. Special thanks to the providers of the dataset and all contributors who helped make this project a reality.
 
-"[![built with love](https://forthebadge.com/images/badges/built-with-love.svg)](https://www.linkedin.com/in/abhay-singh-050a5b293/)")
+[![built with love](https://forthebadge.com/images/badges/built-with-love.svg)](https://www.linkedin.com/in/abhay-singh-050a5b293/)
+
+[![smile please](https://forthebadge.com/images/badges/makes-people-smile.svg)](https://x.com/@abhaysingh71711)
    
 
