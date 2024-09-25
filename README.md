@@ -107,7 +107,7 @@ This project is licensed under the MIT License.
 
 ## 🙏 Acknowledgments
 
-A big thank you to the data science community for their support and resources. Special thanks to the providers of the dataset and all contributors who helped make this project a reality.
+A big thank you to the data science community for their support and resources.
 
 [![built with love](https://forthebadge.com/images/badges/built-with-love.svg)](https://www.linkedin.com/in/abhay-singh-050a5b293/)
 
