@@ -12,7 +12,8 @@ st.title("WhatsApp Chat Analyzer 😃")
 st.markdown("This app is used to analyze your WhatsApp Chat using the exported text file 📁.")
 
 # Sidebar for user instructions and file upload
-st.sidebar.image("banner.jpeg", use_column_width=True)  # Adding an image to the sidebar
+ st.sidebar.image("banner.jpeg", use_container_width=True)
+  # Adding an image to the sidebar
 st.sidebar.title("Analyze:")  # Sidebar title
 st.sidebar.markdown("This app is used to analyze your WhatsApp Chat using the exported text file 📁.")
 st.sidebar.markdown('**How to export chat text file?**')
